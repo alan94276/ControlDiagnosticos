@@ -70,7 +70,7 @@
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/baseline_person_add_alt_1_24"
             android:drawablePadding="8dp"
-            android:text="Como registrase"
+            android:text="Como registrarse"
             android:textColor="@color/lavender"
             android:textSize="20sp" />
 
@@ -150,11 +150,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/lavender"
-            android:text="Logout"
-            android:textSize="20sp"
             android:drawableLeft="@drawable/baseline_exit_to_app_24"
-            android:drawablePadding="8dp"/>
+            android:drawablePadding="8dp"
+            android:text="Cerrar Sesión"
+            android:textColor="@color/lavender"
+            android:textSize="20sp" />
 
     </LinearLayout>
     
