@@ -54,7 +54,7 @@ public class ContactoActivity extends AppCompatActivity {
         share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                redirectActivity(ContactoActivity.this, MainActivity.class);
+                redirectActivity(ContactoActivity.this, ShareActivity.class);
             }
         });
 
