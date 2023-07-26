@@ -33,13 +33,15 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lo hice funcionar xd" />
+            android:text="Lo hice funcionar xd"
+            android:textColor="@color/lavender"/>
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="126dp"
-            android:text="Nada mas agregen mas informacion aqui abajo" />
+            android:text="Nada mas agregen mas informacion aqui abajo"
+            android:textColor="@color/lavender" />
 
     </LinearLayout>
 
