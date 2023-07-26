@@ -19,8 +19,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="500dp"
+                android:gravity="center"
                 android:orientation="vertical"
                 android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="309dp"
+                    android:layout_height="191dp"
+                    app:srcCompat="@drawable/baseline_account_circle_24" />
 
                 <EditText
                     android:id="@+id/login_email"
@@ -30,7 +37,7 @@
                     android:background="@drawable/lavander_border"
                     android:drawableLeft="@drawable/baseline_email_24"
                     android:drawablePadding="8dp"
-                    android:hint="Correo"
+                    android:hint="Correo Electronico"
                     android:padding="8dp" />
 
                 <EditText
@@ -50,7 +57,7 @@
                     android:layout_width="350dp"
                     android:layout_height="70dp"
                     android:layout_marginTop="30dp"
-                    android:text="Incia sesion"
+                    android:text="Inciar sesión"
                     android:textSize="18sp"
                     app:cornerRadius="30dp" />
 
