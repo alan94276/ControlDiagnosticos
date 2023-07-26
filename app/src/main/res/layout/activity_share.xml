@@ -15,14 +15,53 @@
 
         <include
             layout="@layout/toolbar"/>
-        <TextView
-            android:layout_width="wrap_content"
+
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Share"
+            android:ems="10"
             android:layout_gravity="center"
-            android:layout_marginTop="400dp"
-            android:textColor="@color/lavender"
-            android:textSize="36sp"/>
+            android:layout_marginTop="5dp"
+            android:hint="Nombre"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:hint="Correo Electrónico"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edtModelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:hint="Modelo de automivil"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edtAveria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Rasgos de la avería"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:text="Enviar datos"
+            app:icon="@drawable/baseline_send_24" />
 
     </LinearLayout>
 

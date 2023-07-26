@@ -11,7 +11,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-public class AboutActivity extends AppCompatActivity {
+public class ContactoActivity extends AppCompatActivity {
+
     DrawerLayout drawerLayout;
     ImageView menu;
     LinearLayout home, settings, share, about, logout, map, contacto;
@@ -19,7 +20,7 @@ public class AboutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
+        setContentView(R.layout.activity_contacto);
 
         drawerLayout = findViewById(R.id.drawerLayout);
         menu = findViewById(R.id.menu);
@@ -30,6 +31,7 @@ public class AboutActivity extends AppCompatActivity {
         share = findViewById(R.id.share);
         map = findViewById(R.id.map);
         contacto = findViewById(R.id.contact);
+
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,22 +41,20 @@ public class AboutActivity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                redirectActivity(AboutActivity.this, MainActivity.class);
+                redirectActivity(ContactoActivity.this, MainActivity.class);
 
             }
         });
         settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                redirectActivity(AboutActivity.this, SettingsActivity.class);
-
+                redirectActivity(ContactoActivity.this, SettingsActivity.class);
             }
         });
         share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                redirectActivity(AboutActivity.this, ShareActivity.class);
-
+                redirectActivity(ContactoActivity.this, MainActivity.class);
             }
         });
 
@@ -62,27 +62,26 @@ public class AboutActivity extends AppCompatActivity {
         about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                recreate();
-
+                redirectActivity(ContactoActivity.this, AboutActivity.class);
             }
         });
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                redirectActivity(AboutActivity.this, LoginActivity.class);
+                redirectActivity(ContactoActivity.this, LoginActivity.class);
             }
         });
-
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                redirectActivity(AboutActivity.this, MapsActivity.class);
+                redirectActivity(ContactoActivity.this, MapsActivity.class);
             }
         });
+
         contacto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                redirectActivity(AboutActivity.this, ContactoActivity.class);
+                recreate();
             }
         });
 

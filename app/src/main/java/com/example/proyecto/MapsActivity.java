@@ -25,7 +25,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     DrawerLayout drawerLayout;
     ImageView menu;
-    LinearLayout home, settings, share, about, logout ;
+    LinearLayout home, settings, share, about, logout, contacto ;
     FrameLayout maps;
     GoogleMap gMap;
 
@@ -43,6 +43,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         settings = findViewById(R.id.settings);
         share = findViewById(R.id.share);
         maps = findViewById(R.id.mapa);
+        contacto = findViewById(R.id.contact);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapa);
         mapFragment.getMapAsync(this);
@@ -90,6 +91,13 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             @Override
             public void onClick(View v) {
                 recreate();
+            }
+        });
+
+        contacto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                redirectActivity(MapsActivity.this, ContactoActivity.class);
             }
         });
 
