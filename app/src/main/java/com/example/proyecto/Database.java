@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 public class Database extends SQLiteOpenHelper {
-
+    //test commit
     public static final String databaseName = "SignLog.db";
     public Database(@Nullable Context context) {
         super(context, "SignLog.db", null, 1);
