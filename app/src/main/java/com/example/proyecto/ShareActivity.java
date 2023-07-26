@@ -15,7 +15,7 @@ public class ShareActivity extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
     ImageView menu;
-    LinearLayout home, settings, share, about, logout;
+    LinearLayout home, settings, share, about, logout, map;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class ShareActivity extends AppCompatActivity {
         logout = findViewById(R.id.logout);
         settings = findViewById(R.id.settings);
         share = findViewById(R.id.share);
+        map = findViewById(R.id.map);
 
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,6 +69,13 @@ public class ShareActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 redirectActivity(ShareActivity.this, LoginActivity.class);
+            }
+        });
+
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                redirectActivity(ShareActivity.this, MapsActivity.class);
             }
         });
 
