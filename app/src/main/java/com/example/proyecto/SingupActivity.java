@@ -28,25 +28,25 @@ public class SingupActivity extends AppCompatActivity {
                 String password = binding.signupPassword.getText().toString();
                 String confirmPassword = binding.signupConfirm.getText().toString();
                 if(email.equals("")||password.equals("")||confirmPassword.equals(""))
-                    Toast.makeText(SingupActivity.this, "All fields are mandatory", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SingupActivity.this, "Todos los campos son obligatorios", Toast.LENGTH_SHORT).show();
                 else{
                     if(password.equals(confirmPassword)){
                         Boolean checkUserEmail = databaseHelper.checkEmail(email);
                         if(checkUserEmail == false){
                             Boolean insert = databaseHelper.insertData(email, password);
                             if(insert == true){
-                                Toast.makeText(SingupActivity.this, "Signup Successfully!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SingupActivity.this, "Regístrates con éxito!", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
                                 startActivity(intent);
                             }else{
-                                Toast.makeText(SingupActivity.this, "Signup Failed!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SingupActivity.this, "Registro fallido!", Toast.LENGTH_SHORT).show();
                             }
                         }
                         else{
-                            Toast.makeText(SingupActivity.this, "User already exists! Please login", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SingupActivity.this, "¡El usuario ya existe! Por favor Iniciar sesión", Toast.LENGTH_SHORT).show();
                         }
                     }else{
-                        Toast.makeText(SingupActivity.this, "Invalid Password!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SingupActivity.this, "Contraseña invalida!", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
