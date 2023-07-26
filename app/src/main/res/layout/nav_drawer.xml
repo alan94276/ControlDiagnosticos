@@ -9,31 +9,31 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="176dp"
-        android:orientation="vertical"
         android:layout_gravity="bottom"
+        android:background="@drawable/mech2"
+        android:orientation="vertical"
         android:padding="16dp"
-        android:background="@drawable/header_bkg"
         android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
         <ImageView
-            android:layout_width="139dp"
-            android:layout_height="72dp"
+            android:layout_width="165dp"
+            android:layout_height="80dp"
             android:src="@drawable/logo" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TALLER GDL PRO"
+            android:text="TALLER PRO GDL"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:text="llanticentroelponcho@gamil.com"
             android:textColor="@color/white"
-            android:textSize="14sp"
-            android:layout_marginBottom="16dp"/>
+            android:textSize="14sp" />
 
 
     </LinearLayout>
@@ -49,11 +49,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/lavender"
-            android:text="home"
-            android:textSize="20sp"
             android:drawableLeft="@drawable/baseline_home_24"
-            android:drawablePadding="8dp"/>
+            android:drawablePadding="8dp"
+            android:text="Inicio"
+            android:textColor="@color/lavender"
+            android:textSize="20sp" />
 
 </LinearLayout>
 
@@ -131,11 +131,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/lavender"
-            android:text="Logout"
-            android:textSize="20sp"
             android:drawableLeft="@drawable/baseline_exit_to_app_24"
-            android:drawablePadding="8dp"/>
+            android:drawablePadding="8dp"
+            android:text="Cerrar Sesión"
+            android:textColor="@color/lavender"
+            android:textSize="20sp" />
 
     </LinearLayout>
     

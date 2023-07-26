@@ -20,6 +20,12 @@
             android:orientation="vertical"
             android:padding="20dp">
 
+            <ImageView
+                android:id="@+id/imgRegister"
+                android:layout_width="match_parent"
+                android:layout_height="199dp"
+                app:srcCompat="@drawable/baseline_person_add_alt_1_24" />
+
             <EditText
                 android:id="@+id/signup_email"
                 android:layout_width="350dp"
@@ -28,7 +34,7 @@
                 android:background="@drawable/lavander_border"
                 android:drawableLeft="@drawable/baseline_email_24"
                 android:drawablePadding="8dp"
-                android:hint="Email"
+                android:hint="Correo Electronico"
                 android:padding="8dp" />
 
             <EditText
@@ -39,7 +45,7 @@
                 android:background="@drawable/lavander_border"
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="8dp"
-                android:hint="Password"
+                android:hint="Contraseña"
                 android:inputType="textPassword"
                 android:padding="8dp" />
 
@@ -51,7 +57,7 @@
                 android:background="@drawable/lavander_border"
                 android:drawableLeft="@drawable/baseline_password_24"
                 android:drawablePadding="8dp"
-                android:hint="Confirm Password"
+                android:hint="Confirmar Contraseña"
                 android:inputType="textPassword"
                 android:padding="8dp" />
 
@@ -60,7 +66,7 @@
                 android:layout_width="350dp"
                 android:layout_height="70dp"
                 android:layout_marginTop="30dp"
-                android:text="Sign Up"
+                android:text="Registrarse"
                 android:textSize="18sp"
                 app:cornerRadius="30dp" />
 
@@ -71,7 +77,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
                 android:padding="8dp"
-                android:text="Already an user? Login"
+                android:text="¿Ya es Usuario? Inicie Sesión"
                 android:textColor="@color/lavender"
                 android:textSize="18sp" />
         </LinearLayout>
