@@ -20,7 +20,7 @@
         android:layout_width="3dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Android Knowledge"
+        android:text="Taller GDL Pro"
         android:textSize="20sp"
         android:layout_marginStart="12dp"
         android:textColor="@color/white"/>
