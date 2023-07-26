@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 public class SettingsActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ImageView menu;
-    LinearLayout home, settings, share, about, logout;
+    LinearLayout home, settings, share, about, logout, map;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class SettingsActivity extends AppCompatActivity {
         logout = findViewById(R.id.logout);
         settings = findViewById(R.id.settings);
         share = findViewById(R.id.share);
-
+        map = findViewById(R.id.map);
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,6 +68,13 @@ public class SettingsActivity extends AppCompatActivity {
                 redirectActivity(SettingsActivity.this, LoginActivity.class);
             }
         });
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                redirectActivity(SettingsActivity.this, MapsActivity.class);
+            }
+        });
+
 
 
     }
