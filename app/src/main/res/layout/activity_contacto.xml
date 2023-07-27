@@ -13,30 +13,113 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include
-            layout="@layout/toolbar"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Contacto"
-            android:layout_gravity="center"
-            android:layout_marginTop="400dp"
-            android:textColor="@color/lavender"
-            android:textSize="36sp"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center|end"
+                android:orientation="vertical">
+
+                <include layout="@layout/toolbar" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="275dp"
+                    app:srcCompat="@drawable/contacto1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/fondo2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTituloContacto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="¿Tienes alguna duda o inconformidad? ¡Contáctanos!"
+                        android:textAlignment="center"
+                        android:textColor="@color/lavender"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tvCuerpoContacto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="33XXXXXXXX"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tvTituloContacto2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="O si lo prefieres puedes dejar un comentario"
+                        android:textAlignment="center"
+                        android:textColor="@color/lavender"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/edtNombreCon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Nombre Completo"
+                        android:inputType="text"
+                        android:textColorHint="#FFFFFF" />
+
+                    <EditText
+                        android:id="@+id/edtCorreoCon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Correo Electrónico"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="#FFFFFF" />
+
+                    <EditText
+                        android:id="@+id/edtTelefonoCon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Teléfono de contacto"
+                        android:inputType="phone"
+                        android:textColorHint="#FFFFFF" />
+
+                    <EditText
+                        android:id="@+id/edtComentarioCon"
+                        android:layout_width="match_parent"
+                        android:layout_height="215dp"
+                        android:ems="10"
+                        android:gravity="top"
+                        android:hint="Ingrese su comentario"
+                        android:inputType="text"
+                        android:textColorHint="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/BtnContacto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enviar"
+                        app:icon="@drawable/baseline_send_24" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="300dp"
-        android:layout_height="match_parent"
-        android:background="@color/white"
-        android:layout_gravity= "start">
-
-        <include
-            layout="@layout/nav_drawer"/>
-
-
-    </RelativeLayout>
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

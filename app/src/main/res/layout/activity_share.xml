@@ -16,18 +16,27 @@
         <include
             layout="@layout/toolbar"/>
 
-        <EditText
-            android:id="@+id/edtNombre"
+        <TextView
+            android:id="@+id/tvDatos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
+            android:text="Registrar Datos"
+            android:textAlignment="center"
+            android:textColor="@color/lavender"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/edtNombreR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
-            android:hint="Nombre"
+            android:ems="10"
+            android:hint="Nombre Completo"
             android:inputType="text" />
 
         <EditText
-            android:id="@+id/edtCorreo"
+            android:id="@+id/edtCorreoR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -37,13 +46,23 @@
             android:inputType="textEmailAddress" />
 
         <EditText
+            android:id="@+id/edtTelefonoR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Teléfono de contacto"
+            android:inputType="phone" />
+
+        <EditText
             android:id="@+id/edtModelo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
-            android:hint="Modelo de automivil"
+            android:ems="10"
+            android:hint="Modelo de automovil"
             android:inputType="text" />
 
         <EditText
@@ -53,6 +72,13 @@
             android:ems="10"
             android:hint="Rasgos de la avería"
             android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="//Añadir funcionalidad de camara/foto para mandar"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/btnEnviar"

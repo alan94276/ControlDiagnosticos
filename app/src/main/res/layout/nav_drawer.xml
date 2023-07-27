@@ -70,7 +70,7 @@
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/baseline_person_add_alt_1_24"
             android:drawablePadding="8dp"
-            android:text="Como registrarse"
+            android:text="Registrar Datos"
             android:textColor="@color/lavender"
             android:textSize="20sp" />
 
@@ -125,11 +125,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/lavender"
+            android:drawableLeft="@drawable/baseline_contact_phone_24"
+            android:drawablePadding="8dp"
             android:text="Contacto"
-            android:textSize="20sp"
-            android:drawableLeft="@drawable/baseline_settings_24"
-            android:drawablePadding="8dp"/>
+            android:textColor="@color/lavender"
+            android:textSize="20sp" />
 
     </LinearLayout>
 

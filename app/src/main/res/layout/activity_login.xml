@@ -27,8 +27,8 @@
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="309dp"
-                    android:layout_height="191dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="195dp"
                     app:srcCompat="@drawable/baseline_account_circle_24" />
 
                 <EditText
