@@ -25,15 +25,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical" >
 
-                <TextView
-                    android:id="@+id/tvTituloContacto2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Si lo prefieres puedes dejar un comentario"
-                    android:textAlignment="center"
-                    android:textColor="@color/lavender"
-                    android:textSize="25sp" />
-
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="match_parent"
@@ -48,6 +39,14 @@
                     android:text="¿Tienes alguna duda o inconformidad? ¡Contáctanos!"
                     android:textAlignment="center"
                     android:textColor="@color/lavender"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tvCuerpoContacto3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
                     android:textSize="15sp" />
 
                 <TextView
@@ -55,6 +54,31 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="33XXXXXXXX"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvCuerpoContacto4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvTituloContacto2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Si lo prefieres puedes dejar un comentario"
+                    android:textAlignment="center"
+                    android:textColor="@color/lavender"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvCuerpoContacto2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:textAlignment="textStart"
                     android:textColor="@color/black"
                     android:textSize="15sp" />

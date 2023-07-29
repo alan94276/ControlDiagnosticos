@@ -8,88 +8,113 @@
     android:id="@+id/drawerLayout"
     tools:context=".ShareActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <include
-            layout="@layout/toolbar"/>
-
-        <TextView
-            android:id="@+id/tvDatos"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registrar Datos"
-            android:textAlignment="center"
-            android:textColor="@color/lavender"
-            android:textSize="24sp" />
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/edtNombreR"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:ems="10"
-            android:hint="Nombre Completo"
-            android:inputType="text" />
+            <include layout="@layout/toolbar" />
 
-        <EditText
-            android:id="@+id/edtCorreoR"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:hint="Correo Electrónico"
-            android:inputType="textEmailAddress" />
+            <TextView
+                android:id="@+id/tvDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar Datos"
+                android:textAlignment="center"
+                android:textColor="@color/lavender"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/edtTelefonoR"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:ems="10"
-            android:hint="Teléfono de contacto"
-            android:inputType="phone" />
+            <EditText
+                android:id="@+id/edtNombreR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Nombre Completo"
+                android:inputType="text" />
 
-        <EditText
-            android:id="@+id/edtModelo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:ems="10"
-            android:hint="Modelo de automovil"
-            android:inputType="text" />
+            <EditText
+                android:id="@+id/edtCorreoR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Correo Electrónico"
+                android:inputType="textEmailAddress" />
 
-        <EditText
-            android:id="@+id/edtAveria"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Rasgos de la avería"
-            android:inputType="text" />
+            <EditText
+                android:id="@+id/edtTelefonoR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Teléfono de contacto"
+                android:inputType="phone" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="//Añadir funcionalidad de camara/foto para mandar"
-            android:textSize="16sp" />
+            <EditText
+                android:id="@+id/edtModelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Modelo de automovil"
+                android:inputType="text" />
 
-        <Button
-            android:id="@+id/btnEnviar"
-            android:layout_width="340dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="200dp"
-            android:text="Enviar datos"
-            app:icon="@drawable/baseline_send_24" />
+            <EditText
+                android:id="@+id/edtAveria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Rasgos de la avería"
+                android:inputType="text" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tvDatos2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Foto del vehículo"
+                android:textAlignment="center"
+                android:textColor="@color/lavender"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="match_parent"
+                android:layout_height="258dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnCamara"
+                android:layout_width="369dp"
+                android:layout_height="wrap_content"
+                android:onClick="tomarFoto"
+                android:text="Tomar Fotografía"
+                app:icon="@drawable/baseline_photo_camera_24" />
+
+            <Button
+                android:id="@+id/btnEnviar"
+                android:layout_width="369dp"
+                android:layout_height="wrap_content"
+                android:onClick="tomarFoto"
+                android:text="Enviar Datos"
+                app:icon="@drawable/baseline_send_24" />
+
+        </LinearLayout>
+    </ScrollView>
 
     <RelativeLayout
         android:layout_width="300dp"
