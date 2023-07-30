@@ -53,13 +53,13 @@ public class ShareActivity extends AppCompatActivity {
 
             }
         });
-        settings.setOnClickListener(new View.OnClickListener() {
+        /*settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 redirectActivity(ShareActivity.this, SettingsActivity.class);
 
             }
-        });
+        });*/
         share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

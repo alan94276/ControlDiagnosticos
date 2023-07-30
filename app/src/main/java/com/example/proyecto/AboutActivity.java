@@ -43,13 +43,13 @@ public class AboutActivity extends AppCompatActivity {
 
             }
         });
-        settings.setOnClickListener(new View.OnClickListener() {
+       /* settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 redirectActivity(AboutActivity.this, SettingsActivity.class);
 
             }
-        });
+        });*/
         share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
