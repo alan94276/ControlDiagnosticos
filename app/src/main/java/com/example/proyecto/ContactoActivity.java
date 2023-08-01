@@ -1,15 +1,20 @@
 package com.example.proyecto;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+
+
+
+
 
 public class ContactoActivity extends AppCompatActivity {
 
@@ -45,12 +50,7 @@ public class ContactoActivity extends AppCompatActivity {
 
             }
         });
-      /*  settings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                redirectActivity(ContactoActivity.this, SettingsActivity.class);
-            }
-        });*/
+
         share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
