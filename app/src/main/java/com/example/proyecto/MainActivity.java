@@ -51,12 +51,12 @@ public class MainActivity extends AppCompatActivity {
         }
     });
 
-        settings.setOnClickListener(new View.OnClickListener() {
+        /*settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 redirectActivity(MainActivity.this, SettingsActivity.class);
             }
-        });
+        });*/
         about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

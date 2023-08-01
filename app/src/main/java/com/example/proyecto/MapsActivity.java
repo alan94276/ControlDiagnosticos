@@ -68,12 +68,12 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
         });
 
-        settings.setOnClickListener(new View.OnClickListener() {
+        /*settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 redirectActivity(MapsActivity.this, SettingsActivity.class);
             }
-        });
+        });*/
         about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

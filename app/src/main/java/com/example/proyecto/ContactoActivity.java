@@ -45,12 +45,12 @@ public class ContactoActivity extends AppCompatActivity {
 
             }
         });
-        settings.setOnClickListener(new View.OnClickListener() {
+      /*  settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 redirectActivity(ContactoActivity.this, SettingsActivity.class);
             }
-        });
+        });*/
         share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
