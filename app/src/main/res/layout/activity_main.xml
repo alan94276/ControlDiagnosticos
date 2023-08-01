@@ -15,14 +15,62 @@
 
         <include
             layout="@layout/toolbar"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Home"
-            android:layout_gravity="center"
-            android:layout_marginTop="400dp"
-            android:textColor="@color/lavender"
-            android:textSize="36sp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:cardBackgroundColor="@color/lavender"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    app:cardElevation="20dp"
+                    app:cardCornerRadius="20dp">
+                    
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:id="@+id/imagesSlider1"
+                        app:iss_period="1000"
+                        app:iss_auto_cycle="true"
+                        app:iss_delay="1000"
+                        app:iss_corner_radius="20"
+                        />
+
+                    
+                    
+                    
+                    
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agrega cualquier cosa informativa referente a los que trabajan en conjunto al taller y solo eso"
+                    android:textColor="@color/lavender"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tambien podrias basarnos solo en que la aplicacion solo sirve para el correo empresarial y que todo lo importante es en la web"
+                    android:textColor="@color/lavender"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
 
     </LinearLayout>
 
@@ -32,6 +80,8 @@
         android:background="@color/white"
         android:layout_gravity= "start">
 
+
+           />
         <include
             layout="@layout/nav_drawer"/>
 
